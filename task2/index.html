@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Task2</title>
+</head>
+<body>
+    <div class="form">
+        <form action="#" class="form__body">
+            <button type="reset" class="btn-close"><span></span></button>
+            <h1 class="form__title-1">Транспортные средства и водители</h1>
+            <!-- Гос-номер -->
+            <div class="form__state-num form__item">
+                <label for="st-num">Гос-номер</label>
+                <input type="text" name="state-num" id="st-num" class="form__input _req _stateNum" placeholder="Укажите гос-номер">
+            </div>
+            <!-- ТС -->
+            <div class="form__vehicle form__item">
+                <label for="vehicle">Транспортное средство</label>
+                <input type="text" name="vehicle" id="vehicle" class="form__input _req" placeholder="Транспортное средство">
+            </div>
+            <!-- Дата прибытия -->
+            <div class="form__arrival form__item">
+                <label for="arrival">Ориентировочная дата прибытия к покупателю</label>
+                <input type="date" name="arrival" id="arrival" class="form__input _req _arrival">
+            </div>
+            <h2 class="form__title-2">Данные о водителе</h2>
+            <!-- ФИО -->
+            <div class="form__full-name form__item">
+                <label for="full-name">ФИО</label>
+                <input type="text" name="full-name" id="full-name" class="form__input _req _fullName" placeholder="Укажите ФИО водителя">
+            </div>
+            <!-- Паспорт -->
+            <div class="form__passport form__item passport">
+                <div class="passport__series">
+                    <label for="series">Серия</label>
+                    <input type="number" name="series" id="series" class="form__input _req _series" placeholder="Серия">
+                </div>
+                <div class="passport__number">
+                    <label for="number">Номер</label>
+                    <input type="number" name="number" id="number" class="form__input _req _number" placeholder="Номер">
+                </div>
+            </div>
+            <!-- Кем выдан -->
+            <div class="form__issuance-whom form__item">
+                <label for="issuance-whom">Кем выдан</label>
+                <input type="text" name="issuance-whom" id="issuance-whom" class="form__input _req" placeholder="Кем выдан">
+            </div>
+            <!-- Когда выдан -->
+            <div class="form__issuance-when form__item">
+                <label for="issuance-when">Когда выдан</label>
+                <input type="text" name="issuance-when" id="issuance-when" class="form__input _req" placeholder="Когда выдан">
+            </div>
+            <div class="form__buttons">
+                <button type="submit" class="button button__submit button_black">Отправить</button>
+                <button type="reset" class="button button__reset button_white">Отменить</button>
+            </div>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
